@@ -4,6 +4,9 @@
 
 ---
 
+##LIVE LINK 
+https://resio-production.up.railway.app/
+
 ## 🔍 Key Features
 
 - **Resume Upload**: Supports both text-based and scanned (image) PDFs using `pdfplumber` and `Tesseract OCR`.
@@ -74,5 +77,5 @@ Feel free to fork the repository and open pull requests for improvements.
 
 ## 📬 Contact
 
-Built with ❤️ by [Your Name].  
-Feel free to reach out via [your-email@example.com].
+Built with ❤️ by Amritansh Raizada .  
+Feel free to reach out via amritanshspc@gmail.com.
