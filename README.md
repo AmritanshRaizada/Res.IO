@@ -33,7 +33,7 @@ https://resio-production.up.railway.app/
 [![Jinja](https://img.shields.io/badge/Jinja2-B41717?style=for-the-badge&logo=jinja&logoColor=white)](https://jinja.palletsprojects.com/)
 [![Tesseract](https://img.shields.io/badge/Tesseract-35495E?style=for-the-badge&logo=tesseract&logoColor=white)](https://github.com/tesseract-ocr/tesseract)
 [![pdfplumber](https://img.shields.io/badge/pdfplumber-FFD43B?style=for-the-badge&logo=adobeacrobatreader&logoColor=black)](https://github.com/jsvine/pdfplumber)
-[![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://render.com/)
+[![Railway](https://img.shields.io/badge/Railway-000000?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app/)
 
 ---
 
