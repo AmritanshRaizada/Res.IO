@@ -1,0 +1,7 @@
+flask
+flask_cors
+pdfplumber
+pdf2image
+pytesseract
+openai
+# pip install openai==0.28nt

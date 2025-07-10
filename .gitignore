@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+*.sqlite3
+*.log
+*.db
+*.bak
+
+# Flask
+instance/
+uploads/
+.env
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Render deploy metadata
+render.yaml
+
+# Virtual environments
+env/
+venv/
+ENV/
+venv.bak/
+venv-old/
+.venv/
+
+# System Files
+Thumbs.db

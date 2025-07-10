@@ -1,114 +1,78 @@
+# 📄 GPT Wrapper: ReS.io – AI-Powered Resume Analyzer
 
-# 📄 Resume Analyzer Pro
-
-AI-powered resume analyzer web app using Flask, OpenAI, and PDF OCR. Upload your resume and receive job-matching feedback in seconds.
-
----
-
-## 🚀 Features
-
-- Upload PDF resume (supports scanned/image-based PDFs with OCR)
-- Paste a job description or use predefined job roles
-- Real-time typing animation for AI feedback
-- Drag-and-drop + progress bar support
-- ATS-friendliness, skills match, and final verdict
+**ReS.io** is an intelligent resume analyzer that leverages the power of **OpenAI’s GPT-3.5** and **OCR tools** to help job seekers optimize their resumes based on specific job descriptions.
 
 ---
 
-## 📁 Project Structure
+## 🔍 Key Features
+
+- **Resume Upload**: Supports both text-based and scanned (image) PDFs using `pdfplumber` and `Tesseract OCR`.
+- **Job Matching**: Compares your resume against a job description to identify skill gaps, experience alignment, and ATS compatibility.
+- **AI Feedback**: Uses GPT to generate detailed, categorized feedback including:
+  - Skills Match ✅
+  - Experience Relevance 💼
+  - Content Optimization ✍️
+  - ATS Compatibility ⚙️
+  - Strengths & Weaknesses 📈
+  - Final Verdict (Strong Fit, Moderate Fit, Needs Improvement)
+- **Interactive UI**: Drag-and-drop resume upload, typing animation for feedback, and real-time progress bar.
+
+---
+
+## 📦 Tech Stack
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Jinja](https://img.shields.io/badge/Jinja2-B41717?style=for-the-badge&logo=jinja&logoColor=white)](https://jinja.palletsprojects.com/)
+[![Tesseract](https://img.shields.io/badge/Tesseract-35495E?style=for-the-badge&logo=tesseract&logoColor=white)](https://github.com/tesseract-ocr/tesseract)
+[![pdfplumber](https://img.shields.io/badge/pdfplumber-FFD43B?style=for-the-badge&logo=adobeacrobatreader&logoColor=black)](https://github.com/jsvine/pdfplumber)
+[![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://render.com/)
+
+---
+
+## 🚀 Deployment
+
+This app can be deployed on platforms like **Render** or **Vercel**. For Render, use a `render.yaml` and set your OpenAI API key in the dashboard as an environment variable.
+
+For Vercel:
+- Deploy frontend separately (if needed)
+- Use Vercel functions for backend (Flask via `vercel-python` builder) or connect to an external Flask server
+
+Make sure your `.env` or environment variables include:
+
+```bash
+OPENAI_API_KEY=your_openai_key_here
+```
+
+---
+
+## 📂 Folder Structure (Typical)
 
 ```
-├── app.py                # Flask application entry point
-├── .env                  # Secret keys (not tracked in Git)
-├── .gitignore            # Ignored files/folders (e.g., venv, uploads)
-├── render.yaml           # For deployment on Render
-├── requirements.txt      # Python dependencies
-├── static/               # CSS + JS
+.
+├── static/
 │   ├── style.css
-│   └── script.js
 ├── templates/
-│   └── index.html        # Frontend UI
-├── uploads/              # Temporary file storage (auto-removed)
-└── venv/                 # Virtual environment (excluded from Git)
+│   ├── index.html
+├── uploads/
+├── app.py
+├── requirements.txt
+├── README.md
 ```
 
 ---
 
-## 🧪 Local Setup Instructions
+## 🙌 Contribution
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/resume-analyzer-pro.git
-cd resume-analyzer-pro
-```
-
-### 2. Set up virtual environment
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Set up environment variables
-
-Create a `.env` file and add your OpenAI API key:
-
-```
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
-
-### 5. Run the app
-
-```bash
-python app.py
-```
-
-App will be available at `http://127.0.0.1:5000/`
+Feel free to fork the repository and open pull requests for improvements.
 
 ---
 
-## ☁️ Deployment (Render)
+## 📬 Contact
 
-### Option 1: One-click Deploy (Recommended)
-
-1. Push this repo to GitHub
-2. Go to [https://render.com](https://render.com)
-3. Click **New Web Service** → connect your repo
-4. Set environment variable in dashboard:
-   - `OPENAI_API_KEY` = `your-key`
-5. Done 🎉
-
-### Option 2: Use `render.yaml`
-
-Make sure `render.yaml` is committed, then Render auto-detects config.
-
----
-
-## 📦 Requirements
-
-- Python 3.8+
-- Flask
-- pdfplumber
-- pytesseract
-- pdf2image
-- openai
-
----
-
-## 🛡 Security Note
-
-Never commit your `.env` or API keys. Always use environment variables for production.
-
----
-
-## 🧠 Credits
-
-Built by [Your Name]. Powered by Flask + OpenAI + ❤️
-# Res.IO
+Built with ❤️ by [Your Name].  
+Feel free to reach out via [your-email@example.com].
